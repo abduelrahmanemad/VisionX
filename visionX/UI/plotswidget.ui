@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PlotsWidget</class>
+ <widget class="QWidget" name="PlotsWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1314</width>
+    <height>751</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="2" column="0">
+    <widget class="QPushButton" name="uploadImgBtn">
+     <property name="text">
+      <string>Upload Image</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QSplitter" name="splitter">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="QLabel" name="redHistogramLabel">
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid  #316669;
+padding: 10px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="greenHistogramLabel">
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid #316669;
+padding: 10px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="blueHistogramLabel">
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid  #316669;
+padding: 10px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QSplitter" name="splitter_2">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="QLabel" name="rgbDistributionHistogramLabel">
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid  #316669;
+padding: 10px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="grayscaleDistributionCurveLabel">
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid #316669;
+padding: 10px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="grayscaleHistogramlabel">
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid  #316669;
+padding: 10px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QComboBox" name="comboBox">
+     <item>
+      <property name="text">
+       <string>Normal</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>CDF</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
